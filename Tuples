@@ -1,5 +1,5 @@
+1.Program:
 from datetime import datetime
-
 def days_between_dates(date1, date2):
     d1 = datetime(date1[2], date1[1], date1[0])
     d2 = datetime(date2[2], date2[1], date2[0])
@@ -10,12 +10,16 @@ date1 = (1, 1, 2024)
 date2 = (10, 5, 2024)
 
 print("Number of days between", date1, "and", date2, "is:", days_between_dates(date1, date2))
+output:
 Number of days between (1, 1, 2024) and (10, 5, 2024) is: 130
+2.Program:
 import operator 
 lst =[('Hammer', 101.25), ('Chisel', 320.85), ('Hammer', 100.55), ('Ruler', 67.77), ('Tong', 93.03)]
 
 print(sorted(lst, reverse = True, key = operator.itemgetter(1)))
+Output:
 [('Chisel', 320.85), ('Hammer', 101.25), ('Hammer', 100.55), ('Tong', 93.03), ('Ruler', 67.77)]
+3,4 Program:
 Total cost of the portfolio: 4000
 Total amount gained or lost: -100
 Percentage profit made or loss incurred: -2.50%
@@ -45,6 +49,7 @@ total_cost, total_gain_loss, percentage_profit_loss = calculate_portfolio(shares
 print("Total cost of the portfolio:", total_cost)
 print("Total amount gained or lost:", total_gain_loss)
 print("Percentage profit made or loss incurred: {:.2f}%".format(percentage_profit_loss))
+Output:
 lst1=[(), ('Prithvi', 5), ('Ankit', 11), (), ('Harsha', 115), ('Aditya', 115), (), ('Akash', 3), ()]
 lst2=[]
 for i in lst1:
@@ -52,6 +57,7 @@ for i in lst1:
  	 lst2.append(i)
 print(lst2)
 [('Prithvi', 5), ('Ankit', 11), ('Harsha', 115), ('Aditya', 115), ('Akash', 3)]
+5.Program:
 name = ['Adhwin', 'Mrunal', 'Aditya', 'Girish', 'Ankush', 'Meenakshi'] 
 rollno=['12', '43', '45', '50', '66', '21']
 marks = ['90', '45', '82', '75', '95', '65']
@@ -63,6 +69,7 @@ print(lst)
 print(t1)
 print(t2)
 print(t3)
+Output:
 [('Adhwin', 'Mrunal', 'Aditya', 'Girish', 'Ankush', 'Meenakshi'), ('12', '43', '45', '50', '66', '21'), ('90', '45', '82', '75', '95', '65')]
 ('Adhwin', 'Mrunal', 'Aditya', 'Girish', 'Ankush', 'Meenakshi')
 ('12', '43', '45', '50', '66', '21')
